@@ -37,32 +37,14 @@ The code was written manually by me as a learning project.
 
 The app runs through Streamlit and displays a simple chat interface.
 
-When the user sends a message, the app sends the conversation to the OpenAI API. The chatbot then responds based on:
+When the user sends a message, the app sends the conversation to the OpenAI API. The chatbot responds based on:
 
 1. The system prompt
 2. The current user message
 3. The saved chat history
 4. Web search results, when needed
 
-The conversation is saved locally in a JSON file so the chatbot can remember the previous messages.
-
-Current Status
-
-This project is still in progress and is not the final version.
-
-I will keep updating and improving this chatbot as I continue learning AI engineering. The current version includes the main chatbot functionality, chat memory, Streamlit UI, and web search support, but I plan to keep adding new features and improving the code over time.
-
-Future improvements may include:
-
-- Better UI design
-- Clear chat button
-- Multiple chatbot personalities
-- Better error handling
-- Export chat history
-- User login system
-- Database storage instead of local JSON
-- Cloud deployment
-
+The conversation is saved locally in a JSON file so the chatbot can remember previous messages.
 
 ## Project Structure
 
@@ -74,10 +56,69 @@ codebro-chatbot/
 ├── requirements.txt    # Python dependencies
 ├── .env                # Stores the OpenAI API key
 └── README.md           # Project documentation
+```
 
+## Tech Stack
 
+- **Python** — main programming language
+- **Streamlit** — used to build the chatbot web interface
+- **OpenAI API** — powers the AI responses
+- **OpenAI Web Search Tool** — allows the chatbot to search the web
+- **python-dotenv** — loads the API key from the `.env` file
+- **JSON** — stores the chat history locally
 
+## Installation
 
+Install the required packages:
 
+```bash
+pip install -r requirements.txt
+```
 
+Create a `.env` file in the project folder:
 
+```env
+OPENAI_API_KEY=your_openai_api_key_here
+```
+
+Run the app:
+
+```bash
+streamlit run app.py
+```
+
+## Requirements
+
+Make sure you have:
+
+- Python installed
+- An OpenAI API key
+- The required Python packages installed from `requirements.txt`
+
+Example `requirements.txt`:
+
+```txt
+streamlit
+openai
+python-dotenv
+```
+
+## Current Status
+
+This project is still in progress and is not the final version.
+
+I will keep updating and improving this chatbot as I continue learning AI engineering. The current version includes the main chatbot functionality, chat memory, Streamlit UI, and web search support, but I plan to keep adding new features and improving the code over time.
+
+More improvements will be added as the project grows.
+
+## What I Learned
+
+While building this project, I learned how AI applications are connected behind the scenes.
+
+This project helped me understand that an AI chatbot is not just “calling an API.” It also involves handling user input, managing conversation history, controlling the assistant’s behavior with prompts, saving data, and creating a usable interface.
+
+It was a practical first step into real AI engineering projects.
+
+## Author
+
+Built by Joel as part of his AI engineering learning path.

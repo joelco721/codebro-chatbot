@@ -46,18 +46,7 @@ When the user sends a message, the app sends the conversation to the OpenAI API.
 
 The conversation is saved locally in a JSON file so the chatbot can remember the previous messages.
 
-## Project Structure
-
-```text
-codebro-chatbot/
-│
-├── app.py              # Main Streamlit app
-├── history.json        # Stores chat history
-├── requirements.txt    # Python dependencies
-├── .env                # Stores the OpenAI API key
-└── README.md           # Project documentation
-
-## Current Status
+Current Status
 
 This project is still in progress and is not the final version.
 
@@ -73,3 +62,22 @@ Future improvements may include:
 - User login system
 - Database storage instead of local JSON
 - Cloud deployment
+
+
+## Project Structure
+
+```text
+codebro-chatbot/
+│
+├── app.py              # Main Streamlit app
+├── history.json        # Stores chat history
+├── requirements.txt    # Python dependencies
+├── .env                # Stores the OpenAI API key
+└── README.md           # Project documentation
+
+
+
+
+
+
+

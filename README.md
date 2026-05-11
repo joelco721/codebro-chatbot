@@ -56,3 +56,20 @@ codebro-chatbot/
 ├── requirements.txt    # Python dependencies
 ├── .env                # Stores the OpenAI API key
 └── README.md           # Project documentation
+
+## Current Status
+
+This project is still in progress and is not the final version.
+
+I will keep updating and improving this chatbot as I continue learning AI engineering. The current version includes the main chatbot functionality, chat memory, Streamlit UI, and web search support, but I plan to keep adding new features and improving the code over time.
+
+Future improvements may include:
+
+- Better UI design
+- Clear chat button
+- Multiple chatbot personalities
+- Better error handling
+- Export chat history
+- User login system
+- Database storage instead of local JSON
+- Cloud deployment

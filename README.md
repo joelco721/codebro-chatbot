@@ -121,4 +121,4 @@ It was a practical first step into real AI engineering projects.
 
 ## Author
 
-Built by Joel as part of his AI engineering learning path.
+Built by Joel
